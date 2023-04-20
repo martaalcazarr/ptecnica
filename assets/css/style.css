@@ -1,0 +1,437 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    height: 4rem;
+    background-image: url(../img/menu.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+@media (min-width: 768px) {
+    .menu {
+        background-image: url(../img/image1.png);
+        background-size: contain;
+        height: 10rem;
+    }
+}
+
+.titulo-hero {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.titulo-hero h1 {
+    margin-left: 45rem;
+    padding-right: 2rem;
+    border-right: 5px solid black;
+    height: 60px;
+
+
+    font-weight: 900;
+}
+
+.titulo-hero h2 {
+    flex-grow: 5;
+    width: 20rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+@media (max-width:768px) {
+    .titulo-hero {
+       display:grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+    .titulo-hero h1{
+        margin-left: 10rem;
+    }
+}
+
+
+.imagen-hero {
+    background-image: url(../img/15504-21.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 26rem;
+}
+
+.imagen-hero:before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    width: 30%;
+    height: 30%;
+    background-image: url(../img/Capa_hero.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    z-index: 2;
+}
+
+.imagen-derecha-hero {
+    position: absolute;
+    right: 0;
+}
+
+.titulo-intermedio {
+    display: flex;
+    margin: 2rem;
+}
+
+.titulo-intermedio span {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.titulo-intermedio-1 {
+    text-align: center;
+    margin-left: 8rem;
+    width: 30rem;
+    border-right: 5px solid black;
+    height: 70px;
+
+}
+
+.titulo-intermedio-2 {
+    margin-left: 4rem;
+    width: 50rem;
+    margin-right: 8rem;
+    border-right: 5px solid black;
+    height: 70px;
+}
+
+@media (max-width: 768px) {
+    .titulo-intermedio-2 {
+        width: 10rem;
+        margin-right: 0;
+    }
+}
+
+.tres-img-1 {
+    display: flex;
+    margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    gap: 1rem;
+    z-index: -1;
+}
+
+.tres-img-1::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 40%;
+    height: 40%;
+    background-image: url(../img/Capa_1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    z-index: 2;
+}
+
+.tres-img-1 {
+    gap: 1rem;
+}
+
+.tres-img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tres-img-1-1 {
+    margin-right: 1.5rem;
+    position: relative;
+}
+
+.ver-blusas {
+    display: flex;
+
+    align-items: baseline;
+    gap: 0.6rem;
+    align-items: center;
+    height: 25px;
+    border: none;
+    font-size: 1.4rem;
+    top: 90%;
+    left: 30%;
+    position: absolute;
+
+}
+
+.ver-blusas span {
+    font-weight: 700;
+
+}
+
+.ver-blusas img {
+    width: 5%;
+    height: 15px;
+}
+
+.ver-vestidos {
+    display: flex;
+    border: none;
+    font-size: 1.4rem;
+    top: 90%;
+    left: 65%;
+    position: absolute;
+    gap: 0.6rem;
+    align-items: center;
+    height: 25px;
+    border: none;
+    font-size: 1.4rem;
+    position: absolute;
+
+}
+
+.ver-vestidos span {
+    font-weight: 700;
+}
+
+.ver-vestidos img {
+    width: 5%;
+    height: 15px;
+}
+
+@media (max-width: 768px) {
+    .tres-img-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tres-img-1-1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tres-img-1-1 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .tres-img-1>div:not(.tres-img-1-1) {
+        width: 48%;
+        box-sizing: border-box;
+    }
+
+    .tres-img-1::before {
+        top: 50%;
+        left: 30%;
+    }
+}
+
+.tres-img-2 {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.tres-img-2:before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 40%;
+    height: 40%;
+    background-image: url(../img/Capa2.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    z-index: 2;
+}
+
+.tres-img-2-1 {
+    margin-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .tres-img-2 {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .tres-img-2:before {
+        top: 55%;
+        left: 30%;
+        width: 40%;
+        height: 40%;
+    }
+
+    .tres-img-2-1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tres-img-2-1 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+
+    }
+
+    .tres-img-2>div:not(.tres-img-2-1) {
+        width: 48%;
+        box-sizing: border-box;
+
+
+    }
+
+    .tres-img-2>div:not(.tres-img-2-1) img {
+        aspect-ratio: 1 / 2;
+        object-fit: cover;
+
+    }
+}
+
+.tres-img-3 {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.tres-img-3:before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    width: 40%;
+    height: 40%;
+    background-image: url(../img/Capa_3.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    z-index: 2;
+}
+
+.tres-img-3-3 {
+    margin-left: 1.5rem;
+}
+
+.tres-img-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .tres-img-3 {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .tres-img-3:before {
+
+        top: 1%;
+        left: 30%;
+        width: 40%;
+        height: 40%
+    }
+
+    .tres-img-3-3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tres-img-3-3 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .tres-img-3>div:not(.tres-img-3-3) {
+        width: 48%;
+        box-sizing: border-box;
+    }
+
+    .tres-img-3>div:not(.tres-img-3-3) img {
+        aspect-ratio: 1 / 2;
+
+    }
+}
+
+.titulo-marcas h1 {
+    text-align: center;
+}
+
+.marcas {
+    align-items: center;
+}
+
+.prf-marcas p {
+    text-align: center;
+    font-size: 1.2rem;
+}
